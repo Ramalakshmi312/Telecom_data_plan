@@ -18,3 +18,5 @@ db = client.telecom_db
 
 # Reference to the users collection
 users_col = db.users
+plans_col = db['plans']
+

@@ -17,18 +17,18 @@ def show_dashboard():
         'progress': '#00CC96'  # green
     }
     
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-color: {colors['background']};
-            color: {colors['text']};
-        }}
-        .block-container {{
-            color: {colors['text']};
-        }}
-        </style>
-        """, unsafe_allow_html=True)
+    # st.markdown(
+#     f"""
+#     <style>
+#     .stApp {{
+#         background-color: {colors['background']};
+#         color: {colors['text']};
+#     }}
+#     .block-container {{
+#         color: {colors['text']};
+#     }}
+#     </style>
+#     """, unsafe_allow_html=True)
 
     try:
         user_email = st.session_state['user']['email']

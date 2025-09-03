@@ -3,14 +3,8 @@ from src.auth import register_user, login_user
 from src.profile1 import profile_form
 from src.dashboard import show_dashboard
 from src.roles import is_customer, is_admin, is_analyst
-
-
-def show_admin_panel():
-    st.title("Admin Panel - Coming Soon")
-
-
-def show_analytics():
-    st.title("Analytics Dashboard - Coming Soon")
+from src.admin_panel import show_admin_panel
+from src.analytics import show_analytics  # Import the real analytics function
 
 
 def main():
@@ -47,8 +41,11 @@ def main():
                     st.error("⚠️ Please enter both email and password.")
                 else:
                     if login_user(email, password):
-                        st.session_state['user'] = {'name': email, 'email': email,
-                                                    'role': st.session_state['user']['role']}
+                        st.session_state['user'] = {
+                            'name': email,
+                            'email': email,
+                            'role': st.session_state['user']['role']
+                        }
                         st.success("✅ Logged in successfully!")
                         st.stop()
                     else:
