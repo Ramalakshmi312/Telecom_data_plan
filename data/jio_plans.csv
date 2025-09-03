@@ -1,0 +1,6 @@
+planID,planName,price,dataGB,validityDays,call,sms,description
+p001,Jio Unlimited 999,999,Unlimited 5G,84,Unlimited Calls,100/day,Unlimited 5G data with daily 4G fallback limit
+p002,Jio 499 Plan,499,2 GB/day,28,Unlimited Calls,100/day,Daily 2GB data with unlimited calls
+p003,Jio 299 Plan,299,1.5 GB/day,28,Unlimited Calls,100/day,Budget-friendly daily data plan
+p004,Jio 199 Plan,199,2 GB total,18,Unlimited Calls,100/day,Short validity plan with 2GB total data
+p005,Jio 1499 Annual Plan,1499,2 GB/day,365,Unlimited Calls,100/day,Year-long plan with daily data
